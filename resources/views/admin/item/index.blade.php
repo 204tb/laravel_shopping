@@ -1,7 +1,7 @@
 @extends("layouts.app")
 @section("content")
     <h2 class="pb-4">商品一覧</h2>   
-    <a class = "btn-link" href="{{route('admin.item.create')}}">商品追加</a>
+
 
     <table class="table table-striped">
         <tr>

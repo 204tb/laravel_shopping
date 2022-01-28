@@ -2,7 +2,7 @@
 @section("content")
 
 <h2>商品入力</h2>
-<a href="{{route('admin.item.index')}}">商品一覧</a>
+
 
 <form action="{{route('admin.item.add')}}" method="post">
     @csrf
@@ -16,23 +16,23 @@
 
 
     <div>
-        <label for="">{{__('item Name')}}</label>
-        <input class="form-control" type="text" name="name">
+        <label for="name">{{__('item Name')}}</label>
+        <input class="form-control" type="text" name="name" id="name">
     </div>
 
     <div>
-        <label for="">{{__('item Code')}}</label>
-        <input class="form-control" type="text" name="code">
+        <label for="code">{{__('item Code')}}</label>
+        <input class="form-control" type="text" name="code" id="code">
     </div>
 
     <div>
-    <label for="">{{__('Price')}}</label>
-        <input class="form-control" type="text" name="price">
+    <label for="price">{{__('Price')}}</label>
+        <input class="form-control" type="text" name="price" id="price">
     </div>
 
     <div>
-    <label for="">{{__('Stock')}}</label>
-        <input class="form-control" type="text" name="stock">
+    <label for="stock">{{__('Stock')}}</label>
+        <input class="form-control" type="text" name="stock" id="stock">
     </div>
     
 
