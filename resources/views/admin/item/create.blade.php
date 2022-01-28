@@ -1,3 +1,6 @@
+@extends("layouts.app")
+@section("content")
+
 <h2>商品入力</h2>
 <a href="{{route('admin.item.index')}}">商品一覧</a>
 
@@ -14,25 +17,25 @@
 
     <div>
         <label for="">{{__('item Name')}}</label>
-        <input type="text" name="name">
+        <input class="form-control" type="text" name="name">
     </div>
 
     <div>
         <label for="">{{__('item Code')}}</label>
-        <input type="text" name="code">
+        <input class="form-control" type="text" name="code">
     </div>
 
     <div>
     <label for="">{{__('Price')}}</label>
-        <input type="text" name="price">
+        <input class="form-control" type="text" name="price">
     </div>
 
     <div>
     <label for="">{{__('Stock')}}</label>
-        <input type="text" name="stock">
+        <input class="form-control" type="text" name="stock">
     </div>
     
 
-    <button style="background:lightskyblue;color:white">送信</button>
+    <button class="btn btn-primary mt-3">送信</button>
 
 </form>

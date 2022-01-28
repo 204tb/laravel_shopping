@@ -1,9 +1,5 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
-<!--Routeで指定したnameで遷移先を設定-->
-<div class="container">
-
+@extends("layouts.app")
+@section("content")
     <h2 class="pb-4">商品一覧</h2>   
     <a class = "btn-link" href="{{route('admin.item.create')}}">商品追加</a>
 
@@ -33,4 +29,3 @@
         @endforeach
         @endif
     </table>
-</div>
