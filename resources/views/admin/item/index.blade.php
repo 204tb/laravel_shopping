@@ -1,5 +1,5 @@
 @extends("layouts.app")
-@section("content")
+@section("content")<!-- section とendsectionで囲む-->
     <h2 class="pb-4">商品一覧</h2>   
 
 
@@ -29,3 +29,4 @@
         @endforeach
         @endif
     </table>
+@endsection

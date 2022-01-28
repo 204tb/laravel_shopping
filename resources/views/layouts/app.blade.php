@@ -12,7 +12,7 @@
 </head>
 
 <body>
-@include("components.nav")
+    @include("components.nav")
     <div class="container">
         @yield("content")
     </div>

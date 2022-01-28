@@ -39,3 +39,4 @@
     <button class="btn btn-primary mt-3">送信</button>
 
 </form>
+@endsection
